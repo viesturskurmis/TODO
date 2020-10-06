@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_on_secondary"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputTodoTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@color/cardview_dark_background"
+        android:hint="@string/placeholder_todo_title"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:padding="10dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/typeDropDown"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_margin="4dp"
+        android:background="@android:color/holo_green_light"
+        android:textColor="#FFFFFF"
+        android:spinnerMode="dropdown"
+        android:padding="10dip"
+        app:layout_constraintEnd_toStartOf="@+id/mainButtonAdd"
+        app:layout_constraintStart_toStartOf="@+id/inputTodoTitle"
+        app:layout_constraintTop_toBottomOf="@+id/inputTodoTitle" />
+
+    <Button
+        android:id="@+id/mainButtonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@android:color/holo_green_light"
+        android:text="@string/button_add"
+        android:padding="10dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/typeDropDown"
+        app:layout_constraintTop_toBottomOf="@+id/inputTodoTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainItems"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeDropDown"
+        app:layout_constraintVertical_bias="0.746"
+        tools:listitem="@layout/item_todo" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="200dp"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="typeDropDown,mainButtonAdd,inputTodoTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

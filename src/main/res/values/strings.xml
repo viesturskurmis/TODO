@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name" translatable="false">TODO</string>
+
+    <string name="priority_text" translatable="false">%d %s</string>
+
+    <string name="button_add">Add</string>
+    <string name="button_back_to_list">Back to list</string>
+    <string name="button_save">Save &amp; continue</string>
+    <string name="button_share">Share</string>
+
+    <string name="label_todo_type">Type</string>
+    <string name="label_todo_title">To-Do</string>
+    <string name="label_todo_description">Description</string>
+    <string name="label_todo_priority">Urgency</string>
+
+    <string name="placeholder_todo_title">Enter the to-do</string>
+
+    <string name="toast_saved">Saved successfully!</string>
+    <string name="toast_no_title_provided">Please fill To-Do field!</string>
+
+    <string-array name="todo_types_array">
+        <item>Job</item>
+        <item>Private</item>
+        <item>Education</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="todo_priorities_array">
+        <item>Nice to have</item>
+        <item>Sometime</item>
+        <item>Normal</item>
+        <item>Important</item>
+    </string-array>
+
+</resources>

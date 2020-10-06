@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="priority_text" translatable="false">%d %s</string>
+
+    <string name="button_add">Pievienot</string>
+    <string name="button_back_to_list">Atpakaļ uz sarakstu</string>
+    <string name="button_save">Saglabāt &amp; turpināt</string>
+    <string name="button_share">Koplietot</string>
+
+    <string name="label_todo_type">Sfēra</string>
+    <string name="label_todo_title">Uzdevums</string>
+    <string name="label_todo_description">Apraksts</string>
+    <string name="label_todo_priority">Steidzamība</string>
+
+    <string name="placeholder_todo_title">Ievadi uzdevumu</string>
+
+    <string name="toast_saved">Uzdevums veiksmīgi saglabāts!</string>
+    <string name="toast_no_title_provided">Uzdevuma nosaukuma lauks nedrīkst palikt neaizpildīts!</string>
+
+    <string-array name="todo_types_array">
+        <item>Darbs</item>
+        <item>Privātās lietas</item>
+        <item>Mācības</item>
+        <item>Cits</item>
+    </string-array>
+    <string-array name="todo_priorities_array">
+        <item>Varbūt</item>
+        <item>Kaut kad</item>
+        <item>Normālā ritmā</item>
+        <item>Steidzami</item>
+    </string-array>
+
+</resources>
